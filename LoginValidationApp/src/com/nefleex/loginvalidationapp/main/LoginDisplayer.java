@@ -119,7 +119,7 @@ public class LoginDisplayer extends JFrame {
 	        
 	        
 	        
-	    //Labaling log in form.    
+	    //Labeling log in form.    
 		JLabel lblLogInForm = new JLabel("Log in Form");
 		lblLogInForm.setForeground(new Color(255, 255, 255));
 		lblLogInForm.setFont(new Font("Consolas", Font.BOLD, 16));
