@@ -37,14 +37,12 @@ public class LoginDisplayer extends JFrame {
 	private String LogPwFieldContent =  "";
 	
 	//Instantiating an object of the class AccountCreation
-	
 	AccountCreation window = new AccountCreation();
 	
 	private String theUsername = window.getusernamefieldcontent();
 	private String thePassword = window.getpasswordfieldcontent();
 	
 	//Method to save user input from fields on LoginDisplayer
-	
 	public void saveFieldsLD() {
 	LogUserFieldContent = logUserField.getText();
 	LogPwFieldContent = logPwField.getText();
@@ -54,9 +52,6 @@ public class LoginDisplayer extends JFrame {
 	static Point compareCoords;
 	
 
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -120,8 +115,11 @@ public class LoginDisplayer extends JFrame {
 	                setLocation(currrentCoords.x - compareCoords.x, currrentCoords.y - compareCoords.y);
 	            }
 	        });
-		
-		//Code making titlepanel draggable stops here.
+	        //Code making titlepanel draggable stops here.
+	        
+	        
+	        
+	    //Labaling log in form.    
 		JLabel lblLogInForm = new JLabel("Log in Form");
 		lblLogInForm.setForeground(new Color(255, 255, 255));
 		lblLogInForm.setFont(new Font("Consolas", Font.BOLD, 16));
@@ -226,7 +224,7 @@ public class LoginDisplayer extends JFrame {
 			public void mouseClicked(MouseEvent e) {
 				saveFieldsLD();
 				if(LogUserFieldContent.equals(theUsername) && LogPwFieldContent.equals(thePassword)){
-					JOptionPane.showMessageDialog(null, "Login successfull");
+					JOptionPane.showMessageDialog(null, "Login successful");
 					} else if (!LogUserFieldContent.equals(theUsername) || !LogPwFieldContent.equals(thePassword)) {
 						JOptionPane.showMessageDialog(null, "Login failed");
 					}

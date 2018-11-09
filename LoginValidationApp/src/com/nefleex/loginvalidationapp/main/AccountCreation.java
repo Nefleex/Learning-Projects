@@ -90,7 +90,7 @@ public class AccountCreation extends JFrame {
 		titlePanel.add(lblAccountCreation);
 		
 		
-		////Make titlepanel draggable by mouse events and listeners.
+		//Make titlepanel draggable by mouse events and listeners.
         compareCoords = null;
         titlePanel.addMouseListener(new MouseListener() {
             public void mouseReleased(MouseEvent e) {
@@ -126,18 +126,6 @@ public class AccountCreation extends JFrame {
 		panel_1.setBounds(297, 0, 27, 26);
 		contentPane.add(panel_1);
 		
-		//Method for btcCreateAccount to save user input from text fields of AccountCreation
-		
-		/*public submitbtcCreateAccount() 
-	        // You can do some validation here before assign the text to the variable 
-			
-			String userLastname;
-			String userFirstname;
-			String userName;
-			String userPassword;
-			
-	        userWord = userInput.getText();*/
-	    
 		
 		//Minimize button "-" in AccountCreation window
 		JLabel label_1 = new JLabel("-");
@@ -256,7 +244,7 @@ public class AccountCreation extends JFrame {
 				if(!lastnamefield.getText().isEmpty() && !firstnamefield.getText().isEmpty() && !usernamefield.getText().isEmpty() && !passwordfield.getText().isEmpty()) {
 					saveFieldsAC();
 					dispose();
-					JOptionPane.showMessageDialog(null, "Account Creation Successfull! Proceed to Login.");
+					JOptionPane.showMessageDialog(null, "Account Creation Successful! Proceed to Login.");
 					LoginDisplayer newlogin = new LoginDisplayer();
 					newlogin.setVisible(true);
 					//If any of the fields is empty, shows message dialog "Can't leave any fields empty!!!".
